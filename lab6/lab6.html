@@ -1,0 +1,31 @@
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol type="1">
+<li><a href="#org1fe39e8">Implement FlexSC in xv6</a>
+<ol type="1">
+<li><a href="#orgad3894c">Design Report (Deadline: 10-Nov 2022 at 23:59 hrs)</a></li>
+<li><a href="#orgd61f8f1">Implementation (Deadline: 18-Nov 2022 at 23:59 hrs)</a></li>
+</ol></li>
+</ol>
+<p><a id="org1fe39e8"></a></p>
+<h1 id="implement-flexsc-in-xv6">Implement FlexSC in xv6</h1>
+<p><a id="orgad3894c"></a></p>
+<h2 id="design-report-deadline-10-nov-2022-at-2359-hrs">Design Report (Deadline: 10-Nov 2022 at 23:59 hrs)</h2>
+<ol type="1">
+<li>Go through the paper <code>flexsc.pdf</code> and write a detailed report on how you will implement FlexSC (outlined in the paper) into <code>xv6</code>. Your report (<code>lab6/report/report.md</code>) should contain details on the following:
+<ul>
+<li><p>A list of changes that you will make to <code>xv6</code>.</p>
+<ul>
+<li><p>The order of items on your list should reflect the order in which you will go about implementing the suggested changes.</p></li>
+<li><p>Each item on the list should explicitly mention if the item is a feature-add or a minor tweak or change to the existing <code>xv6</code> code. For example, adding a new system call (<code>flexsc_wait()</code>) is a minor tweak, but implementing its syscall handler function would be a new feature. Similarly, changing page table mappings to support <code>syscall pages</code> will be a minor tweak, but the actual reading/writing mechanism, allocation, managing status of syscalls, etc will be a new feature-add.</p></li>
+<li><p>For each feature-add, outline the envisaged design as well (algorithm you plan to implement, data structures you wish to maintain, etc).</p></li>
+</ul></li>
+<li><p>Mention your strategy of creating a user-level thread library that is needed to seamlessly support FlexSC system call from user applications. If you are planning to use an existing implementation (found elsewhere on the internet), mention the source and any tweaks that you have to do that source.</p></li>
+<li><p>Mention the test cases that you plan to create to test (and prove) that your implementation is working correctly.</p></li>
+</ul></li>
+</ol>
+<p><a id="orgd61f8f1"></a></p>
+<h2 id="implementation-deadline-18-nov-2022-at-2359-hrs">Implementation (Deadline: 18-Nov 2022 at 23:59 hrs)</h2>
+<ol type="1">
+<li><p>Implement the changes mentioned in your report into <code>xv6</code> and demonstrate its working.</p>
+<p>NOTE: Any changes that are not mentioned in the report submitted earlier will not be graded. Minor tweaks to add corner cases that you missed in your design (but discovered during implementation) is allowed, but it should be documented clearly (bug found, and the change required to fix it).</p></li>
+</ol>

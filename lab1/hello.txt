@@ -1,0 +1,4 @@
+
+Current Working Directory is:  /home/yukta/Desktop/IITPKD/OS/git/112001009_112001052/lab1
+
+~/home/yukta/Desktop/IITPKD/OS/git/112001009_112001052/lab1$$ 

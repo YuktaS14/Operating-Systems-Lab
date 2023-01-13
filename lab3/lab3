@@ -1,0 +1,33 @@
+#!/bin/bash
+
+export PATH=.:${PATH}
+l="x"
+usage="
+Guess the words and you'll get a secret message.
+Use the help message below to get going. 
+
+Usage:
+$(basename "$0") [-h] [-n name] [-r roll]
+
+where:
+    -h       : show this help text
+    -n name  : specify your name
+    -r roll  : specify your roll no
+NOTE: name and roll entered will be used for auto-grading"
+
+while getopts 'hn:r:' option; do
+    case "$option" in
+        h) echo "$usage"
+           exit
+           ;;
+        n) name=$OPTARG
+           ;;
+        r) roll=$OPTARG
+           ;;
+    esac
+done
+shift $((OPTIND - 1))
+.$l $roll $name
+
+
+
