@@ -1,0 +1,1 @@
+### Q.Find answers for three questions using gdb,objDump etc. and get the feel of hacking.

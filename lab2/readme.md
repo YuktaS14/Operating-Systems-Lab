@@ -11,6 +11,3 @@
 -> iii. on make tests the test cases made by us will run. 
 
 7.log messages are printed in log.txt
-
-(while creating libraries need to mention inline before (setMatricesinitialize_resultMatrix) and (initialize_resultMatrix) (else error: multiple reference) but while building, linking libraries u need to remove inline (else error: undefined reference))
-
